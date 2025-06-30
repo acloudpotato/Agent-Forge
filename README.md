@@ -1,5 +1,5 @@
 # Agent Forge
-
+![agent-forge](assets/agent-forge.png)
 <p align="center">
   An application for rapidly creating and deploying AI agents.
 </p>
