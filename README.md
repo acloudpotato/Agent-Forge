@@ -6,7 +6,7 @@
 
 ## About The Project
 
-Agent Forge is a Next.js application designed to streamline the creation of AI agents. Users can describe the agent they need, and the platform uses generative AI (powered by Google's Gemini through Genkit) to generate a complete agent profile, including a name, description, features, and even a "Getting Started" guide.
+Agent Forge is a Next.js application designed to streamline the creation of AI agents. Users can describe the agent they need, and the platform uses generative AI (powered by Google's Gemini) to generate a complete agent profile, including a name, description, features, and even a "Getting Started" guide.
 
 This project serves as a powerful demonstration of how to integrate modern web technologies with cutting-edge AI to build dynamic, intelligent applications.
 
@@ -33,7 +33,7 @@ To get a local copy up and running, follow these simple steps.
 1.  **Set up your Environment Variables:**
     *   Create a `.env` file in the root of your project. You can copy the example file to get started:
         ```sh
-        cp .env.example .env
+        vi .env
         ```
     *   Add your secrets to the new `.env` file:
         *   `GOOGLE_API_KEY`: Get a key from [Google AI Studio](https://aistudio.google.com/app/apikey).
@@ -73,6 +73,10 @@ Here's an overview of the key directories in the project:
 ## Authentication
 
 The application uses a simple JWT-based session management system found in `src/lib/auth.ts`. For this prototype, any email and password combination will successfully log you in. The middleware (`src/middleware.ts`) protects all application routes, redirecting unauthenticated users to the `/login` page.
+
+## Resources
+
+To know more about the project, here is blog to [explore more](https://acloudpotato.medium.com/idea-to-ai-in-180-seconds-agent-forge-6bd2b2987dec?sk=7d2032ee976295484590991077a1b377).
 
 ## Contributing
 
